@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./estilos/normalize.css">
+  <link rel="stylesheet" href="./estilos/style.css">
+  <title>FILTER</title>
+</head>
+
+<body class="d-flex justify align-items">
+  <div class="container-general d-flex justify align-items">
+    <!--cuadro para el filtro-->
+    <div class="cuadro-de-ejemplo d-flex justify align-items">
+      <div class="box-model"></div>
+    </div>
+    <!--cuadro para configurar el filtro-->
+    <div class="cuadro-de-configuraciones d-flex" >
+
+      <!--selector de color-->
+      <div class="selector d-flex justify align-items">
+        <label for="Color">
+          <span class="text-color">Color:</span>
+        </label>
+        <input class="color-code d-flex align-items" id="color" type="color" name="Color">
+      </div>
+
+      <!--selector de opacidad-->
+      <div class="selector d-flex justify align-items">
+        <label for="Opacity">
+          <span class="text-opacity">Opacity:</span>
+        </label>
+        <input id="opacity" class="opacity-position-range" type="range" name="Opacity" value="0.3" min="0.01" max="1" step="0.01">
+        <output class="value-opacity"> <span class="values">0.3%</span></output>
+      </div>
+
+      <!--selector de difuminado-->
+      <div class="selector d-flex justify align-items">
+        <label for="Blur">
+          <span class="text-blur">Blur:</span>
+        </label>
+        <input id="blur" class="blur-position-range" type="range" name="Blur" value="2" min="0" max="20" step="1">
+        <output class="value-blur"> <span class="values">2px</span></output>
+      </div>
+
+      <!--selector de saturacion-->
+      <div class="selector d-flex justify align-items">
+        <label for="saturation">
+          <span class="text-saturation">Saturation:</span>
+        </label>
+        <input id="saturation" class="saturation-position-range" type="range" name="saturation" value="50" min="1"
+          max="100">
+        <output class="value-saturation"><span class="values"> 50%</span> </output>
+      </div>
+
+      <!--selector de contraste-->
+      <div class="selector d-flex justify align-items">
+        <label for="contrast">
+          <span class="text-contrast">Contrast:</span>
+        </label>
+        <input id="contrast" class="contrast-position-range" type="range" name="contrast" value="50" min="0" max="100">
+        <output class="value-contrast"> <span class="values">50%</span> </output>
+      </div>
+      
+      <!--selector de tamaño-->
+      <div class="selector d-flex justify align-items">
+        <label for="size">
+          <span class="text-size">Size:</span>
+        </label>
+        <input id="size" class="size-position-range" type="range" name="size" value="200" min="10" max="200">
+        <output class="value-size"> <span class="values">200px</span> </output>
+      </div>
+
+      <!--selector de radio-->
+      <div class="selector d-flex justify align-items">
+        <label for="Radio">
+          <span class="text-radio">Radio:</span>
+        </label>
+        <input id="radio" class="radio-position-range" type="range" name="Radio" value="0" min="0" max="100">
+        <output class="value-radio"> <span class="values">0px</span> </output>
+      </div>
+      <div class="codigo-Css">
+        background:
+        <span class="background"> </span><br>
+        backdrop-filter:
+        <span class="blur-filter"></span> <span class="saturate-filter"></span><span class="contrast-filter"></span><br>
+        height:
+        <span class="heigth"></span>
+        <br>
+        width:
+        <span class="width"></span>
+      <br>
+        border-radius:
+        <span class="border"></span>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="index.js"></script>
+
+</html>
